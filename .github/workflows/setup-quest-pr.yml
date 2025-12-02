@@ -170,7 +170,7 @@ EOF
               repo: context.repo.repo,
               title: '[Quest Sample] Add advanced integration tutorials',
               head: branchName,
-              base: 'master',
+              base: 'main',
               body: `## Description
 
 This PR adds comprehensive integration documentation for TechFlow, including:

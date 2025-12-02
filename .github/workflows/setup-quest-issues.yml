@@ -34,35 +34,35 @@ jobs:
               repo: context.repo.repo,
               title: '[Quest Sample] API key authentication failing',
               body: `## Issue Type
-Bug
-
-## Description
-API key authentication is failing with error "Invalid API key" even though the key is correct.
-
-## Steps to Reproduce
-1. Set API key in config: \`api_key = "sk-1234..."\`
-2. Run: \`techflow auth --test\`
-3. See error
-
-## Expected Behavior
-Authentication should succeed with valid API key
-
-## Actual Behavior
-Getting "Invalid API key" error
-
-## Environment
-- OS: Windows 11
-- Version: 2.1.0
-- Python: 3.10.5
-
-## Error Message
-\`\`\`
-ERROR: Authentication failed: Invalid API key
-Status code: 401
-\`\`\`
-
----
-*This is a sample issue for Quest Scenario 3. Part of GitHub Copilot Repository Management Quest.*`,
+              Bug
+              
+              ## Description
+              API key authentication is failing with error "Invalid API key" even though the key is correct.
+              
+              ## Steps to Reproduce
+              1. Set API key in config: \`api_key = "sk-1234..."\`
+              2. Run: \`techflow auth --test\`
+              3. See error
+              
+              ## Expected Behavior
+              Authentication should succeed with valid API key
+              
+              ## Actual Behavior
+              Getting "Invalid API key" error
+              
+              ## Environment
+              - OS: Windows 11
+              - Version: 2.1.0
+              - Python: 3.10.5
+              
+              ## Error Message
+              \`\`\`
+              ERROR: Authentication failed: Invalid API key
+              Status code: 401
+              \`\`\`
+              
+              ---
+              *This is a sample issue for Quest Scenario 3. Part of GitHub Copilot Repository Management Quest.*`,
               labels: ['quest-sample', 'bug']
             });
 
@@ -75,25 +75,25 @@ Status code: 401
               repo: context.repo.repo,
               title: '[Quest Sample] Typo in getting-started.md',
               body: `## Issue Type
-Documentation
-
-## Description
-There's a typo on line 12 of docs/getting-started.md
-
-## Location
-\`docs/getting-started.md\` line 12
-
-## Current Text
-"Users get a smooth experiance when installing"
-
-## Should Be
-"Users get a smooth experience when installing"
-
-## Priority
-Low - but affects first impression
-
----
-*This is a sample issue for Quest Scenario 3. Perfect for testing automated fixes with GitHub Copilot!*`,
+              Documentation
+              
+              ## Description
+              There's a typo on line 12 of docs/getting-started.md
+              
+              ## Location
+              \`docs/getting-started.md\` line 12
+              
+              ## Current Text
+              "Users get a smooth experiance when installing"
+              
+              ## Should Be
+              "Users get a smooth experience when installing"
+              
+              ## Priority
+              Low - but affects first impression
+              
+              ---
+              *This is a sample issue for Quest Scenario 3. Perfect for testing automated fixes with GitHub Copilot!*`,
               labels: ['quest-sample', 'docs', 'good-first-issue']
             });
 
@@ -106,25 +106,25 @@ Low - but affects first impression
               repo: context.repo.repo,
               title: '[Quest Sample] Broken link in README',
               body: `## Issue Type
-Documentation
-
-## Description
-README.md has a broken link to old documentation site
-
-## Location
-\`README.md\` line 45
-
-## Current Link
-\`http://old-docs.example.com/guide\`
-
-## Should Link To
-\`https://docs.example.com/guide\`
-
-## Problem
-The old domain no longer exists (404 error)
-
----
-*Sample issue for practicing Copilot automated fixes*`,
+              Documentation
+              
+              ## Description
+              README.md has a broken link to old documentation site
+              
+              ## Location
+              \`README.md\` line 45
+              
+              ## Current Link
+              \`http://old-docs.example.com/guide\`
+              
+              ## Should Link To
+              \`https://docs.example.com/guide\`
+              
+              ## Problem
+              The old domain no longer exists (404 error)
+              
+              ---
+              *Sample issue for practicing Copilot automated fixes*`,
               labels: ['quest-sample', 'docs', 'good-first-issue']
             });
 
@@ -137,25 +137,25 @@ The old domain no longer exists (404 error)
               repo: context.repo.repo,
               title: '[Quest Sample] Add dark mode to documentation',
               body: `## Feature Request
-
-### Problem
-The documentation site is very bright and hard to read in low-light conditions.
-
-### Proposed Solution
-Add a dark mode toggle to the documentation site.
-
-### Use Case
-Developers often work in low-light environments and would benefit from a dark theme.
-
-### Impact
-Medium - would improve user experience for many users
-
-### Alternatives Considered
-- Letting users use browser extensions
-- Not a good solution because not everyone knows about them
-
----
-*Sample feature request for Quest categorization practice*`,
+              
+              ### Problem
+              The documentation site is very bright and hard to read in low-light conditions.
+              
+              ### Proposed Solution
+              Add a dark mode toggle to the documentation site.
+              
+              ### Use Case
+              Developers often work in low-light environments and would benefit from a dark theme.
+              
+              ### Impact
+              Medium - would improve user experience for many users
+              
+              ### Alternatives Considered
+              - Letting users use browser extensions
+              - Not a good solution because not everyone knows about them
+              
+              ---
+              *Sample feature request for Quest categorization practice*`,
               labels: ['quest-sample', 'feature', 'enhancement']
             });
 
@@ -168,16 +168,16 @@ Medium - would improve user experience for many users
               repo: context.repo.repo,
               title: '[Quest Sample] Cannot authenticate with API',
               body: `## Problem
-I can't get authentication to work. Keep getting invalid key errors.
-
-## Details
-Using the API key from my account settings but it says invalid.
-
-## Environment
-Windows 11, latest version
-
----
-*Sample duplicate issue - same as Issue #1. Practice finding duplicates with Copilot!*`,
+              I can't get authentication to work. Keep getting invalid key errors.
+              
+              ## Details
+              Using the API key from my account settings but it says invalid.
+              
+              ## Environment
+              Windows 11, latest version
+              
+              ---
+              *Sample duplicate issue - same as Issue #1. Practice finding duplicates with Copilot!*`,
               labels: ['quest-sample', 'bug']
             });
 
@@ -190,9 +190,9 @@ Windows 11, latest version
               repo: context.repo.repo,
               title: "[Quest Sample] It doesn't work",
               body: `When I try to use it, it doesn't work.
-
----
-*Sample vague issue that needs more information. Practice requesting details!*`,
+              
+              ---
+              *Sample vague issue that needs more information. Practice requesting details!*`,
               labels: ['quest-sample', 'needs-info']
             });
 
@@ -205,30 +205,30 @@ Windows 11, latest version
               repo: context.repo.repo,
               title: '[Quest Sample] Code example missing import statement',
               body: `## Issue Type
-Documentation
-
-## Description
-The code example in tutorials/api-guide.md doesn't work because it's missing an import.
-
-## Location
-\`tutorials/api-guide.md\` lines 45-52
-
-## Problem
-The example uses \`Client\` but doesn't import it:
-
-\`\`\`python
-client = Client(api_key='your_key')
-response = client.get_users()
-\`\`\`
-
-## Fix Needed
-Add the import:
-\`\`\`python
-from techflow import Client
-\`\`\`
-
----
-*Good candidate for automated fix with Copilot*`,
+              Documentation
+              
+              ## Description
+              The code example in tutorials/api-guide.md doesn't work because it's missing an import.
+              
+              ## Location
+              \`tutorials/api-guide.md\` lines 45-52
+              
+              ## Problem
+              The example uses \`Client\` but doesn't import it:
+              
+              \`\`\`python
+              client = Client(api_key='your_key')
+              response = client.get_users()
+              \`\`\`
+              
+              ## Fix Needed
+              Add the import:
+              \`\`\`python
+              from techflow import Client
+              \`\`\`
+              
+              ---
+              *Good candidate for automated fix with Copilot*`,
               labels: ['quest-sample', 'docs', 'good-first-issue']
             });
 
@@ -241,16 +241,16 @@ from techflow import Client
               repo: context.repo.repo,
               title: '[Quest Sample] How do I configure automatic backups?',
               body: `## Question
-How do I configure TechFlow to automatically backup my data?
-
-## What I've Tried
-I looked through the documentation but couldn't find clear instructions.
-
-## What I Need
-Step-by-step guide for setting up automatic backups.
-
----
-*Sample question issue - practice categorization*`,
+              How do I configure TechFlow to automatically backup my data?
+              
+              ## What I've Tried
+              I looked through the documentation but couldn't find clear instructions.
+              
+              ## What I Need
+              Step-by-step guide for setting up automatic backups.
+              
+              ---
+              *Sample question issue - practice categorization*`,
               labels: ['quest-sample', 'question']
             });
 
