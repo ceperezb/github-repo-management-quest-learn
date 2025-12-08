@@ -50,11 +50,18 @@ This quest uses **real Microsoft Learn modules** in the `learn-pr/wwl/` folder a
 | Feature | Agents | Prompts | Instructions | Workflows |
 |---------|--------|---------|--------------|-----------|
 | **Purpose** | Persistent persona with scoped behavior | Reusable one-off commands | Global guidance for Copilot | Multi-step automated tasks |
-| **Location** | `.github/agents/` | `.github/prompts/` | `.github/copilot-instructions.md` | GitHub Actions or Copilot CLI |
-| **Format** | `.agent.md` (Markdown + YAML frontmatter) | `.prompt.md` (Markdown + YAML) | Markdown | YAML workflow files |
-| **Scope** | Repo-specific or org-wide | Repo-specific | Repo-wide | Repo or org |
-| **Recognition** | Appears in Copilot Chat dropdown | Appears as slash commands (`/my-prompt`) | Applies globally | Executes jobs automatically |
+| **Location** | `.github/agents/` | `.github/prompts/` | `.github/copilot-instructions.md` or `.github/instructions/` | GitHub Actions or Copilot CLI |
+| **Format** | `.agent.md` (Markdown + YAML frontmatter) | `.prompt.md` (Markdown + YAML) | Markdown (with optional `applyTo` frontmatter for path-specific) | YAML workflow files |
+| **Scope** | Repo-specific or user profile | Repo-specific | Repo-wide or path-specific | Repo or org |
+| **Recognition** | Appears in Copilot Chat agent dropdown | Attach via + icon or type `#prompt:` | Applies automatically based on context | Executes jobs automatically |
 | **Use Case** | Specialized roles (e.g., Security Reviewer, Docs Writer) | Quick tasks (e.g., Generate tests) | Set tone or coding standards | Automate CI/CD or scripted tasks |
+
+> **New Features (VS Code 1.106+):**
+>
+> - **Handoffs**: Agents can define `handoffs` in frontmatter to create guided workflows between agents
+> - **Path-specific instructions**: Use `.instructions.md` files in `.github/instructions/` with `applyTo` glob patterns
+> - **AGENTS.md**: Alternative format for coding agent instructions (also supports `CLAUDE.md` or `GEMINI.md`)
+> - **Tools specification**: Agents can specify available `tools` in frontmatter to limit capabilities
 
 ## Getting Started
 
