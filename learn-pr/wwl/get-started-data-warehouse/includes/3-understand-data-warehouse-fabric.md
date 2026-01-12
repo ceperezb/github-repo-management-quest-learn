@@ -43,7 +43,7 @@ This SQL query loads data from a CSV file stored in Azure Blob Storage into a ta
 
 ### Clone tables
 
-You can create zero-copy table clones with minimal storage costs in a data warehouse. These clones are essentially replicas of tables created by copying the metadata while still referencing the same data files in OneLake. This means that the underlying data stored as parquet files is not duplicated, which helps in saving storage costs.
+You can create zero-copy table clones with minimal storage costs in a data warehouse. These clones are essentially replicas of tables created by copying the metadata while still referencing the same data files in [Introduction to OneLake](xref:learn.wwl.introduction-to-onelake). This means that the underlying data stored as parquet files is not duplicated, which helps in saving storage costs.
 
 [Table clones](/fabric/data-warehouse/clone-table) are particularly useful in several scenarios.
 
